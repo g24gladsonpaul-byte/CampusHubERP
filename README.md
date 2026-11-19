@@ -2,7 +2,7 @@
 
 
 
-\*\*CampusHubERP\*\* is a Python-based Campus Management System developed using Object-Oriented Programming, SQLite, SQLAlchemy ORM, and FastAPI.
+\CampusHubERP\ is a Python-based Campus Management System developed using Object-Oriented Programming, SQLite, SQLAlchemy ORM, and FastAPI.
 
 
 
