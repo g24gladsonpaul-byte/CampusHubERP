@@ -1,0 +1,1 @@
+{'faculty_id': 201, 'name': 'Rahul', 'age': 35, 'email': 'rahul@example.com', 'department': 'Computer Science'}
