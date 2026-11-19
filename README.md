@@ -318,47 +318,24 @@ The database stores:
 
 The repository layer handles database operations, while the service layer manages application functionality.
 
-
-
 \## Application Architecture
 
-
-
-```text
-
-User
-
-&#x20; |
-
-&#x20; v
-
-FastAPI
-
-&#x20; |
-
-&#x20; v
-
-Service Layer
-
-&#x20; |
-
-&#x20; v
-
-Repository Layer
-
-&#x20; |
-
-&#x20; v
-
-SQLAlchemy ORM
-
-&#x20; |
-
-&#x20; v
-
-SQLite Database
-
-```
+             User
+               |
+               v
+            FastAPI
+               |
+               v
+         Service Layer
+               |
+               v
+       Repository Layer
+               |
+               v
+        SQLAlchemy ORM
+               |
+               v
+        SQLite Database
 
 
 
