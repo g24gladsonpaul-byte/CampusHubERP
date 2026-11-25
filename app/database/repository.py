@@ -2,6 +2,7 @@
 from app.database.db import SessionLocal
 from app.database.models import StudentDB, FacultyDB, CourseDB
 from sqlalchemy.orm import joinedload
+from app.core.validators import validate_email, validate_course_code
 
 class DatabaseRepository:
 
@@ -66,22 +67,42 @@ from app.database.models import StudentDB, FacultyDB, CourseDB, EnrollmentDB
 
 # ================= STUDENT FUNCTIONS =================
 
+
 def add_student(student_id, name, age, email, department):
     db = SessionLocal()
 
-    student = StudentDB(
-        student_id=student_id,
-        name=name,
-        age=age,
-        email=email,
-        department=department
-    )
+    try:
+        # Check email
+        if not validate_email(email):
+            raise ValueError("Invalid email address!")
 
-    db.add(student)
-    db.commit()
-    db.close()
-    print("Student added successfully!")
+        # Check duplicate Student ID
+        existing_student = db.query(StudentDB).filter(
+            StudentDB.student_id == student_id
+        ).first()
 
+        if existing_student:
+            raise ValueError("Student ID already exists!")
+
+        student = StudentDB(
+            student_id=student_id,
+            name=name,
+            age=age,
+            email=email,
+            department=department
+        )
+
+        db.add(student)
+        db.commit()
+
+        print("Student added successfully!")
+
+    except Exception as e:
+        db.rollback()
+        raise ValueError(str(e))
+
+    finally:
+        db.close()
 
 def get_students():
     db = SessionLocal()
@@ -189,20 +210,40 @@ def delete_faculty(faculty_id):
 
 # ================= COURSE FUNCTIONS =================
 
+
 def add_course(course_code, course_name, credits):
     db = SessionLocal()
 
-    course = CourseDB(
-        course_code=course_code,
-        course_name=course_name,
-        credits=credits
-    )
+    try:
+        # Validate Course Code
+        if not validate_course_code(course_code):
+            raise ValueError("Invalid Course Code! Use format CS101.")
 
-    db.add(course)
-    db.commit()
-    db.close()
-    print("Course added successfully!")
+        # Check duplicate Course Code
+        existing_course = db.query(CourseDB).filter(
+            CourseDB.course_code == course_code
+        ).first()
 
+        if existing_course:
+            raise ValueError("Course Code already exists!")
+
+        course = CourseDB(
+            course_code=course_code,
+            course_name=course_name,
+            credits=credits
+        )
+
+        db.add(course)
+        db.commit()
+
+        print("Course added successfully!")
+
+    except Exception as e:
+        db.rollback()
+        raise ValueError(str(e))
+
+    finally:
+        db.close()
 
 def get_courses():
     db = SessionLocal()
@@ -246,18 +287,43 @@ def delete_course(course_code):
 
 # ================= ENROLLMENT FUNCTIONS =================
 
+
 def add_enrollment(student_id, course_code):
     db = SessionLocal()
 
-    enrollment = EnrollmentDB(
-        student_id=student_id,
-        course_code=course_code
-    )
+    try:
+        # Check whether Student exists
+        student = db.query(StudentDB).filter(
+            StudentDB.student_id == student_id
+        ).first()
 
-    db.add(enrollment)
-    db.commit()
-    db.close()
-    print("Enrollment added successfully!")
+        if not student:
+            raise ValueError("Student not found! Enrollment cancelled.")
+
+        # Check whether Course exists
+        course = db.query(CourseDB).filter(
+            CourseDB.course_code == course_code
+        ).first()
+
+        if not course:
+            raise ValueError("Course not found! Enrollment cancelled.")
+
+        enrollment = EnrollmentDB(
+            student_id=student_id,
+            course_code=course_code
+        )
+
+        db.add(enrollment)
+        db.commit()
+
+        print("Enrollment added successfully!")
+
+    except Exception as e:
+        db.rollback()
+        raise ValueError(str(e))
+
+    finally:
+        db.close()
 
 
 def get_enrollments():

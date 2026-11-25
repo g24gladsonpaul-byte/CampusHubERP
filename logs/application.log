@@ -1,0 +1,118 @@
+2026-11-23 19:10:06,220 - INFO - Logger test successful
+2026-11-23 19:10:06,220 - ERROR - This is a sample error
+2026-11-23 19:10:35,040 - INFO - Logger test successful
+2026-11-23 19:10:35,041 - ERROR - This is a sample error
+2026-11-23 19:17:50,684 - INFO - Student Added: 501
+2026-11-23 19:17:50,686 - INFO - Student Updated: 501
+2026-11-23 19:17:50,688 - INFO - Student Deleted: 501
+2026-11-24 18:27:55,947 - INFO - Faculty Added: 501
+2026-11-24 18:27:55,951 - INFO - Faculty Updated: 501
+2026-11-24 18:27:55,952 - INFO - Faculty Deleted: 501
+2026-11-24 18:29:26,978 - INFO - Course Added: TEST501
+2026-11-24 18:29:26,984 - INFO - Course Updated: TEST501
+2026-11-24 18:29:26,985 - INFO - Course Deleted: TEST501
+2026-11-24 18:31:24,131 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-24 18:31:24,142 - INFO - Enrollment Updated: 1
+2026-11-24 18:31:24,150 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-24 18:32:19,510 - INFO - Student Added: 501
+2026-11-24 18:32:19,512 - INFO - Student Updated: 501
+2026-11-24 18:32:19,513 - INFO - Student Deleted: 501
+2026-11-24 18:32:19,519 - INFO - Faculty Added: 501
+2026-11-24 18:32:19,521 - INFO - Faculty Updated: 501
+2026-11-24 18:32:19,522 - INFO - Faculty Deleted: 501
+2026-11-24 18:32:19,525 - INFO - Course Added: TEST501
+2026-11-24 18:32:19,526 - INFO - Course Updated: TEST501
+2026-11-24 18:32:19,527 - INFO - Course Deleted: TEST501
+2026-11-24 18:32:19,531 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-24 18:32:19,533 - INFO - Enrollment Updated: 1
+2026-11-24 18:32:19,534 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 13:17:18,266 - INFO - Course Added: CS102
+2026-11-25 13:17:18,278 - INFO - Course Updated: CS101
+2026-11-25 13:17:18,288 - INFO - Course Deleted: CS102
+2026-11-25 13:17:20,371 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 13:17:20,386 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 13:21:47,142 - INFO - Course Added: CS102
+2026-11-25 13:21:47,147 - INFO - Course Updated: CS101
+2026-11-25 13:21:47,154 - INFO - Course Deleted: CS102
+2026-11-25 13:21:49,200 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 13:21:49,212 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:01:55,421 - INFO - Logger test successful
+2026-11-25 16:01:55,422 - ERROR - This is a sample error
+2026-11-25 16:01:55,436 - INFO - Course Added: TEST501
+2026-11-25 16:01:55,445 - INFO - Course Updated: TEST501
+2026-11-25 16:01:55,449 - INFO - Course Deleted: TEST501
+2026-11-25 16:01:55,462 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:01:55,466 - INFO - Enrollment Updated: 1
+2026-11-25 16:01:55,471 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:01:55,483 - INFO - Faculty Added: 501
+2026-11-25 16:01:55,487 - INFO - Faculty Updated: 501
+2026-11-25 16:01:55,491 - INFO - Faculty Deleted: 501
+2026-11-25 16:01:55,499 - INFO - Student Added: 501
+2026-11-25 16:01:55,501 - INFO - Student Updated: 501
+2026-11-25 16:01:55,503 - INFO - Student Deleted: 501
+2026-11-25 16:02:01,319 - INFO - Course Added: CS102
+2026-11-25 16:02:01,322 - INFO - Course Updated: CS101
+2026-11-25 16:02:01,330 - INFO - Course Deleted: CS102
+2026-11-25 16:02:03,415 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:02:03,426 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:05:09,314 - INFO - Logger test successful
+2026-11-25 16:05:09,315 - ERROR - This is a sample error
+2026-11-25 16:05:09,323 - INFO - Course Added: TEST501
+2026-11-25 16:05:09,360 - INFO - Course Updated: TEST501
+2026-11-25 16:05:09,374 - INFO - Course Deleted: TEST501
+2026-11-25 16:05:09,387 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:05:09,395 - INFO - Enrollment Updated: 1
+2026-11-25 16:05:09,404 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:05:09,420 - INFO - Faculty Added: 501
+2026-11-25 16:05:09,423 - INFO - Faculty Updated: 501
+2026-11-25 16:05:09,429 - INFO - Faculty Deleted: 501
+2026-11-25 16:05:09,436 - INFO - Student Added: 501
+2026-11-25 16:05:09,441 - INFO - Student Updated: 501
+2026-11-25 16:05:09,443 - INFO - Student Deleted: 501
+2026-11-25 16:15:54,896 - INFO - Course Added: CS102
+2026-11-25 16:15:54,900 - INFO - Course Updated: CS101
+2026-11-25 16:15:54,908 - INFO - Course Deleted: CS102
+2026-11-25 16:15:57,012 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:15:57,038 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:19:02,055 - INFO - Logger test successful
+2026-11-25 16:19:02,055 - ERROR - This is a sample error
+2026-11-25 16:19:02,062 - INFO - Course Added: TEST501
+2026-11-25 16:19:02,064 - INFO - Course Updated: TEST501
+2026-11-25 16:19:02,066 - INFO - Course Deleted: TEST501
+2026-11-25 16:19:02,075 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:19:02,078 - INFO - Enrollment Updated: 1
+2026-11-25 16:19:02,079 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:19:02,085 - INFO - Faculty Added: 501
+2026-11-25 16:19:02,087 - INFO - Faculty Updated: 501
+2026-11-25 16:19:02,088 - INFO - Faculty Deleted: 501
+2026-11-25 16:19:02,095 - INFO - Student Added: 501
+2026-11-25 16:19:02,098 - INFO - Student Updated: 501
+2026-11-25 16:19:02,100 - INFO - Student Deleted: 501
+2026-11-25 16:20:49,677 - INFO - Logger test successful
+2026-11-25 16:20:49,677 - ERROR - This is a sample error
+2026-11-25 16:20:49,683 - INFO - Course Added: TEST501
+2026-11-25 16:20:49,686 - INFO - Course Updated: TEST501
+2026-11-25 16:20:49,688 - INFO - Course Deleted: TEST501
+2026-11-25 16:20:49,696 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:20:49,697 - INFO - Enrollment Updated: 1
+2026-11-25 16:20:49,703 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:20:49,710 - INFO - Faculty Added: 501
+2026-11-25 16:20:49,712 - INFO - Faculty Updated: 501
+2026-11-25 16:20:49,714 - INFO - Faculty Deleted: 501
+2026-11-25 16:20:49,719 - INFO - Student Added: 501
+2026-11-25 16:20:49,723 - INFO - Student Updated: 501
+2026-11-25 16:20:49,725 - INFO - Student Deleted: 501
+2026-11-25 16:21:20,296 - INFO - Logger test successful
+2026-11-25 16:21:20,297 - ERROR - This is a sample error
+2026-11-25 16:21:20,302 - INFO - Course Added: TEST501
+2026-11-25 16:21:20,305 - INFO - Course Updated: TEST501
+2026-11-25 16:21:20,307 - INFO - Course Deleted: TEST501
+2026-11-25 16:21:20,316 - INFO - Enrollment Created: Student 101, Course CS101
+2026-11-25 16:21:20,317 - INFO - Enrollment Updated: 1
+2026-11-25 16:21:20,319 - INFO - Enrollment Deleted: Student 101, Course CS101
+2026-11-25 16:21:20,325 - INFO - Faculty Added: 501
+2026-11-25 16:21:20,327 - INFO - Faculty Updated: 501
+2026-11-25 16:21:20,329 - INFO - Faculty Deleted: 501
+2026-11-25 16:21:20,336 - INFO - Student Added: 501
+2026-11-25 16:21:20,338 - INFO - Student Updated: 501
+2026-11-25 16:21:20,340 - INFO - Student Deleted: 501

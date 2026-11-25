@@ -1,24 +1,46 @@
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-# SQLite Database URL
-DATABASE_URL = "sqlite:///campushub.db"
 
-# Create Database Engine
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False}
-)
+class Database:
+    _instance = None
 
-# Create Session
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Database, cls).__new__(cls)
 
-# Create Base Class
-Base = declarative_base()
+        return cls._instance
+
+    def __init__(self):
+        if hasattr(self, "_initialized"):
+            return
+
+        self.DATABASE_URL = "sqlite:///campushub.db"
+
+        self.engine = create_engine(
+            self.DATABASE_URL,
+            connect_args={"check_same_thread": False}
+        )
+
+        self.SessionLocal = sessionmaker(
+            autocommit=False,
+            autoflush=False,
+            bind=self.engine
+        )
+
+        self.Base = declarative_base()
+
+        self._initialized = True
+
+
+# Create the Singleton database instance
+database = Database()
+
+# Keep existing names compatible with the project
+engine = database.engine
+SessionLocal = database.SessionLocal
+Base = database.Base
 
 
 # Get Database Session
@@ -29,7 +51,6 @@ def get_db():
         yield db
     finally:
         db.close()
-
 
 
 # Create Database Tables
