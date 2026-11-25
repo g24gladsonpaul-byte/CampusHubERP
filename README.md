@@ -192,13 +192,12 @@ CampusHubERP/
 
 
 
-\### 1. Clone the Repository
+\### 1. Clone repository
 
 
 
 ```bash
-
-git clone YOUR\_GITHUB\_REPOSITORY\_URL
+git clone https://github.com/g24gladsonpaul-byte/CampusHubERP.git
 
 ```
 
